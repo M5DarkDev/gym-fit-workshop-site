@@ -1,180 +1,143 @@
-/*Global reset*/
+/* Global reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', verdana, sans-serif;
+    font-family: 'Poppins', Verdana, sans-serif;
     color: whitesmoke;
     background-color: black;
 }
 
-/*links, lists and button reset*/
+/* Links, listas e botões */
 li, a, button {
-    font-family: 'Poppins', verdana, sans-serif;
-    font-weight: 500px;
+    font-family: 'Poppins', Verdana, sans-serif;
+    font-weight: 500;
     font-size: 16px;
     color: white;
     text-decoration: none;
 }
 
-/*header section*/
+/* Header */
 header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
+    flex-wrap: wrap;
 }
 
-/*header logo*/
+/* Logo */
 header h1 {
     margin-right: auto;
-    padding: 0;
     cursor: default;
     text-transform: uppercase;
-    font-family: 'Antonio', verdana, sans-serif;
+    font-family: 'Antonio', Verdana, sans-serif;
     font-size: 25px;
     color: rgb(0, 238, 255);
 }
 
-/*Navegation Bar*/
+/* Navegação */
 .nav_links {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .nav_links li {
-    display: inline-block;
-    padding: 0px 20px;
+    padding: 0 20px;
 }
 
 .nav_links li a {
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s ease;
 }
 
 .nav_links li a:hover {
-    color:rgb(0, 238, 255);
+    color: rgb(0, 238, 255);
 }
 
-/*contact button*/
-.contact {
-    margin-left: 20px;
+/* Botão de contato */
+.contact, .contact-activate, .active, .cta, .card-button {
     padding: 9px 25px;
     border: none;
-    border-radius: 50px;
+    border-radius: 20px;
     cursor: pointer;
     color: black;
     background-color: rgb(0, 238, 255);
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s ease;
 }
 
-.contact:hover {
+.contact-activate, .active {
+    pointer-events: none;
+}
+
+.contact:hover,
+.cta:hover,
+.card-button:hover {
     color: whitesmoke;
-    background-color: rgba(0, 238, 255, 0.466);
+    background-color: rgba(0, 238, 255, 0.5);
 }
 
-/*Contact button on the contact page*/
-.contact-activate {
-    margin-left: 20px;
-    padding: 9px 25px;
-    border: none;
-    border-radius: 50px;
-    cursor: default;
-    color: black;
-    background-color: rgb(0, 238, 255);
-    transition: all 0.3s ease 0s;
-}
-
-/*Activate link on navegation bar*/
-.active {
-    margin-left: 20px;
-    padding: 4px 20px;
-    border: none;
-    border-radius: 50px;
-    pointer-events: none; /*no click*/
-    color: black;
-    background-color: rgb(0, 238, 255);
-    transition: all 0.3s ease 0s;
-} 
-
-/*Hero section*/
+/* Hero section */
 .hero-section {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(banner.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0px 100px;
+    padding: 0 100px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
-/*hero - Text section*/
 .hero-section h1 {
     font-size: 45px;
-    width: 420px;
-    font-family: 'Antonio', verdana, sans-serif;
-    font-weight: 400px;
-    background-color: rgba(240, 248, 255, 0);
+    max-width: 420px;
+    font-family: 'Antonio', Verdana, sans-serif;
+    font-weight: 400;
+    background-color: transparent;
 }
 
 .hero-section p {
-    width: 430px;
-    padding: 30px 0px;
-    font-family: 'Poppins', verdana, sans-serif;
+    max-width: 430px;
+    padding: 30px 0;
     font-weight: 400;
     font-size: 18px;
-    background-color: rgba(255, 255, 255, 0);
-}
-.hero-section b {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: transparent;
 }
 
+.hero-section b,
 .hero-section a {
-    background-color: rgba(255, 255, 255, 0);;
+    background-color: transparent;
 }
 
 .hero-content {
     padding: 20px;
     margin-left: auto;
-    text-align: center;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.048);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
-.cta {
-    margin-left: 20px;
-    padding: 9px 25px;
-    border: none;
-    border-radius: 20px 0px 20px 0px;
-    cursor: pointer;
-    color: black;
-    background-color: rgb(0, 238, 255);
-    transition: all 0.3s ease 0s;
-}
-
-.cta:hover {
-    color: whitesmoke;
-    background-color: rgba(0, 238, 255, 0.466);
-}
-
-/*Title*/
+/* Título */
 .highlights h1 {
     padding: 20px;
     margin-bottom: -130px;
-    font-family: 'Antonio', 'Poppins', verdana, sans-serif;
+    font-family: 'Antonio', 'Poppins', Verdana, sans-serif;
     font-size: 80px;
     color: rgb(0, 238, 255);
     text-align: center;
 }
 
-/*Info Card */
+/* Cards */
 .card-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 100px;
-    margin-left: 5px;
+    margin: 100px 5px 0;
 }
+
 .card {
     width: 325px;
     margin: 20px;
@@ -189,33 +152,6 @@ header h1 {
     height: auto;
 }
 
-/*specific cards*/
-#card2 p{
-    margin-top: 20px;
-}
-#card2 button{
-    margin-top: 40px;
-}
-#card3 p{
-    margin-top: 20px;
-}
-#card3 button{
-    margin-top: 40px;
-}
-#card4 p{
-    margin-top: 20px;
-}
-#card4 button{
-    margin-top: 40px;
-}
-#card5 p{
-    margin-top: 20px;
-}
-#card5 button{
-    margin-top: 40px;
-}
-
-
 .card-content {
     padding: 20px;
 }
@@ -226,24 +162,17 @@ header h1 {
 }
 
 .card-content p {
+    margin-top: 20px;
     color: whitesmoke;
     font-size: 15px;
     line-height: 1.7;
 }
 
-.card-button {
-    display: inline-block;
-    padding: 6px 16px;
-    margin-top: 16px;
-    border: none;
-    border-radius: 20px 0px 20px 0px;
-    color: black; 
-    background-color: rgb(0, 238, 255);
-    cursor: pointer;
+.card button {
+    margin-top: 40px;
 }
 
-/*Gallery Section*/
-
+/* Galeria */
 .gallery {
     width: 100%;
     margin: auto;
@@ -252,81 +181,28 @@ header h1 {
     align-items: center;
     flex-wrap: wrap;
 }
+
 .gallery img {
     width: 130px;
     height: 125px;
     border: 1px solid rgba(0, 238, 255, 0.26);
     border-radius: 8px;
-    box-shadow: 4px 7px 7px 0px rgba(255, 255, 255, 0.13);
+    box-shadow: 4px 7px 7px 0 rgba(255, 255, 255, 0.13);
     cursor: pointer;
     margin: 10px;
     transition: 400ms;
     filter: sepia(1) saturate(1.9) hue-rotate(150deg);
 }
+
 .gallery img:hover {
     filter: saturate(1.15);
-    width: 390px;
-    height: 260px;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
-/*specific cards*/
-#card2 p{
-    margin-top: 20px;
-}
-#card2 button{
-    margin-top: 40px;
-}
-#card3 p{
-    margin-top: 20px;
-}
-#card3 button{
-    margin-top: 40px;
-}
-#card4 p{
-    margin-top: 20px;
-}
-#card4 button{
-    margin-top: 40px;
-}
-#card5 p{
-    margin-top: 20px;
-}
-#card5 button{
-    margin-top: 40px;
-}
-
-
-.card-content {
-    padding: 20px;
-}
-
-.card-content h3 {
-    font-size: 27px;
-    margin-bottom: 8px;
-}
-
-.card-content p {
-    color: whitesmoke;
-    font-size: 15px;
-    line-height: 1.7;
-}
-
-.card-button {
-    display: inline-block;
-    padding: 6px 16px;
-    margin-top: 16px;
-    border: none;
-    border-radius: 20px 0px 20px 0px;
-    color: black; 
-    background-color: rgb(0, 238, 255);
-    cursor: pointer;
-}
-/*Footer section*/
+/* Footer */
 footer {
-    position: static;
-    bottom: 0;
     width: 100%;
-    height: auto;
     padding: 20px;
     font-size: 12px;
     background-color: black;
@@ -339,16 +215,42 @@ footer a {
     pointer-events: none;
 }
 
+/* Responsividade para celular */
 @media (max-width: 768px) {
-    body {
-      font-size: 16px;
-      padding: 10px;
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
     }
-  
-    .menu {
-      flex-direction: column;
+
+    .nav_links {
+        flex-direction: column;
+        width: 100%;
     }
-  }
-  
 
+    .nav_links li {
+        padding: 10px 0;
+    }
 
+    .hero-section {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    .highlights h1 {
+        font-size: 50px;
+        margin-bottom: -60px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+}
