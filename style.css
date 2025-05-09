@@ -96,7 +96,7 @@ header h1 {
 .hero-section {
     width: 100%;
     height: 100vh;
-    background-image: url(banner.png);
+    background-image: url(banner.png); /* Imagem original para desktop */
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0px 100px;
@@ -346,10 +346,18 @@ form button:hover {
 
 .contact-footer { position: fixed; }
 
-
-
-/* Responsividade para celular */
+/*Mobile Styles*/
 @media (max-width: 768px) {
+
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+    background-position: left center;
+    background-size: cover;
+    background-image: url('hero-mobile.png'); /* Imagem diferente para dispositivos móveis */
+    text-align: center;
+  }
 
   header {
     flex-direction: column;
@@ -370,15 +378,6 @@ form button:hover {
   .contact, .contact-activate, .active {
     margin: 15px 0 0 0;
     width: 100%;
-    text-align: center;
-  }
-
-  .hero-section {
-    flex-direction: column;
-    height: auto;
-    padding: 40px 20px;
-    background-position: left center; /* Move a imagem para a esquerda */
-    background-size: cover;
     text-align: center;
   }
 
@@ -439,6 +438,3 @@ form button:hover {
     font-size: 12px;
   }
 }
-
-
-  
