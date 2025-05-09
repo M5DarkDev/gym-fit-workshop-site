@@ -349,35 +349,43 @@ form button:hover {
 /*Mobile Styles*/
 @media (max-width: 768px) {
 
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .nav_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav_links li {
+    display: inline-block;
+    padding: 5px 10px;
+  }
+
+  .contact,
+  .contact-activate,
+  .active {
+    margin: 10px 5px 0;
+    padding: 8px 16px;
+    font-size: 14px;
+    width: auto;
+  }
+
   .hero-section {
     flex-direction: column;
     height: auto;
     padding: 40px 20px;
+    background-image: url('/img/banner-mobile.png');
     background-position: left center;
     background-size: cover;
-    background-image: url('hero-mobile.png'); /* Imagem diferente para dispositivos móveis */
-    text-align: center;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-  }
-
-  .nav_links {
-    width: 100%;
-    text-align: left;
-  }
-
-  .nav_links li {
-    display: block;
-    padding: 10px 0;
-  }
-
-  .contact, .contact-activate, .active {
-    margin: 15px 0 0 0;
-    width: 100%;
     text-align: center;
   }
 
@@ -387,7 +395,8 @@ form button:hover {
     width: 100%;
   }
 
-  .hero-section h1, .hero-section p {
+  .hero-section h1,
+  .hero-section p {
     width: 100%;
   }
 
@@ -420,7 +429,8 @@ form button:hover {
     gap: 20px;
   }
 
-  input, textarea {
+  input,
+  textarea {
     font-size: 16px;
   }
 
@@ -438,3 +448,4 @@ form button:hover {
     font-size: 12px;
   }
 }
+
