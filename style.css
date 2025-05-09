@@ -351,92 +351,94 @@ form button:hover {
 /* Responsividade para celular */
 @media (max-width: 768px) {
 
-    header {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 20px;
-    }
-  
-    .nav_links {
-      width: 100%;
-      text-align: left;
-    }
-  
-    .nav_links li {
-      display: block;
-      padding: 10px 0;
-    }
-  
-    .contact, .contact-activate, .active {
-      margin: 15px 0 0 0;
-      width: 100%;
-      text-align: center;
-    }
-  
-    .hero-section {
-      flex-direction: column;
-      height: auto;
-      padding: 40px 20px;
-      background-position: center;
-      background-size: cover;
-      text-align: center;
-    }
-  
-    .hero-content {
-      margin-left: 0;
-      padding: 20px;
-      width: 100%;
-    }
-  
-    .hero-section h1, .hero-section p {
-      width: 100%;
-    }
-  
-    .highlights h1 {
-      font-size: 50px;
-      margin-bottom: 0;
-    }
-  
-    .card-container {
-      flex-direction: column;
-      align-items: center;
-      margin: 40px 0;
-    }
-  
-    .card {
-      width: 90%;
-    }
-  
-    .image-section img {
-      width: 90%;
-      height: auto;
-    }
-  
-    .contact-page {
-      padding: 20px;
-    }
-  
-    .contact-wrapper {
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    input, textarea {
-      font-size: 16px;
-    }
-  
-    form button {
-      width: 100%;
-      font-size: 16px;
-    }
-  
-    footer {
-      font-size: 10px;
-      padding: 10px;
-    }
-  
-    footer a {
-      font-size: 12px;
-    }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
   }
+
+  .nav_links {
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav_links li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .contact, .contact-activate, .active {
+    margin: 15px 0 0 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+    background-position: left center; /* Move a imagem para a esquerda */
+    background-size: cover;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin-left: 0;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .hero-section h1, .hero-section p {
+    width: 100%;
+  }
+
+  .highlights h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .image-section img {
+    width: 90%;
+    height: auto;
+  }
+
+  .contact-page {
+    padding: 20px;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  input, textarea {
+    font-size: 16px;
+  }
+
+  form button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  footer a {
+    font-size: 12px;
+  }
+}
+
+
   
