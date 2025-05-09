@@ -339,4 +339,16 @@ footer a {
     pointer-events: none;
 }
 
+@media (max-width: 768px) {
+    body {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .menu {
+      flex-direction: column;
+    }
+  }
+  
+
 
