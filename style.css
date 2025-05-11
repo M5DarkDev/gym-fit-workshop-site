@@ -700,6 +700,8 @@ footer a {
 
     .hero-section-details {
         padding: 0px 20px;
+        background-image: url(banner2.png);
+        background-size: cover;
     }
 
     /* Hero section text size adjustment */
