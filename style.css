@@ -103,7 +103,7 @@ header h1 {
     width: 100%;
     height: 100vh;
     padding: 0px 100px;
-    background-image: url(/img/banner.png);
+    background-image: url(banner.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -222,7 +222,7 @@ header h1 {
     width: 100%;
     height: 100vh;
     padding: 0px 100px;
-    background-image: url(/img/banner2.png);
+    background-image: url(banner2.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -730,3 +730,111 @@ footer a {
     font-weight: bold;
     pointer-events: none;
 }
+
+/* Adições no final do CSS para responsividade */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    .nav_links {
+        width: 100%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav_links li {
+        padding: 10px 0;
+    }
+
+    .cta-btn, .cta-btn-active {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .hero-section, .hero-section-details {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+        background-image: url('hero-mobile.png');
+    }
+
+    .hero-section h1, .hero-section p,
+    .hero-section-details h1, .hero-section-details p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-content, .hero-content-details {
+        margin: 20px 0;
+    }
+
+    .card-container, .instructor-cards, .image-section,
+    .session-options, .contact-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .instructor-card, .image-section img,
+    .pricing-table, .contact-form, .contact-info {
+        width: 100% !important;
+    }
+
+    .register a h3 {
+        font-size: 18px;
+    }
+
+    .pricing-section, .schedule-section, .faq,
+    .comments, .calculator-section, .selection-group {
+        padding: 20px;
+    }
+
+    .selection-group {
+        flex-direction: column;
+    }
+
+    .input-group input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Extra responsividade para telas muito pequenas */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .hero-section h1, .hero-section-details h1 {
+        font-size: 36px;
+    }
+
+    .hero-section p, .hero-section-details p,
+    .calculator-section p {
+        font-size: 16px;
+    }
+
+    .btn, .cta-btn, .cta-btn-active {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .hero-section, .hero-section-details {
+        background-size: contain;
+    }
+}
+
+/* Notas:
+- Adicionada imagem "hero-banner" para dispositivos móveis na hero-section.
+- Navegação vira coluna para telas pequenas.
+- Seções com layout flexível foram ajustadas para empilhar os elementos. */
