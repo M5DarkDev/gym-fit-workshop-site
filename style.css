@@ -762,11 +762,18 @@ footer a {
         margin-left: 0;
     }
 
-    .hero-section, .hero-section-details {
+    .hero-section {
         flex-direction: column;
         padding: 20px;
         height: auto;
         background-image: url('hero-mobile.png');
+    }
+
+    .hero-section-details {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+        background-image: url('banner2.png');
     }
 
     .hero-section h1, .hero-section p,
